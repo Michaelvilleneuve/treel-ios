@@ -12,6 +12,10 @@
 		4C0555CD1DEFF36C00C0459D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0555CB1DEFF36C00C0459D /* Main.storyboard */; };
 		4C0555CF1DEFF36C00C0459D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0555CE1DEFF36C00C0459D /* Assets.xcassets */; };
 		4C0555D21DEFF36C00C0459D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0555D01DEFF36C00C0459D /* LaunchScreen.storyboard */; };
+		4C28EC311DF187DD0095E961 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28EC301DF187DD0095E961 /* AccountViewController.swift */; };
+		4C28EC351DF1A2480095E961 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28EC341DF1A2480095E961 /* CustomTabBarViewController.swift */; };
+		4C31DB571DF1B4F80065C219 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C31DB561DF1B4F80065C219 /* GenericViewController.swift */; };
+		4CD52D1A1DF2D58C00F18959 /* NewIdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD52D191DF2D58C00F18959 /* NewIdeaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		4C0555CE1DEFF36C00C0459D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0555D11DEFF36C00C0459D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0555D31DEFF36C00C0459D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C28EC301DF187DD0095E961 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		4C28EC341DF1A2480095E961 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		4C31DB561DF1B4F80065C219 /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		4CD52D191DF2D58C00F18959 /* NewIdeaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewIdeaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				4C0555CE1DEFF36C00C0459D /* Assets.xcassets */,
 				4C0555D01DEFF36C00C0459D /* LaunchScreen.storyboard */,
 				4C0555D31DEFF36C00C0459D /* Info.plist */,
+				4C28EC301DF187DD0095E961 /* AccountViewController.swift */,
+				4C28EC341DF1A2480095E961 /* CustomTabBarViewController.swift */,
+				4C31DB561DF1B4F80065C219 /* GenericViewController.swift */,
+				4CD52D191DF2D58C00F18959 /* NewIdeaViewController.swift */,
 			);
 			path = treel;
 			sourceTree = "<group>";
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					4C0555C31DEFF36C00C0459D = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MU9D66FNS8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0555CA1DEFF36C00C0459D /* ViewController.swift in Sources */,
+				4C31DB571DF1B4F80065C219 /* GenericViewController.swift in Sources */,
+				4C28EC351DF1A2480095E961 /* CustomTabBarViewController.swift in Sources */,
 				4C0555C81DEFF36C00C0459D /* AppDelegate.swift in Sources */,
+				4C28EC311DF187DD0095E961 /* AccountViewController.swift in Sources */,
+				4CD52D1A1DF2D58C00F18959 /* NewIdeaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +277,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MU9D66FNS8;
 				INFOPLIST_FILE = treel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.treel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MU9D66FNS8;
 				INFOPLIST_FILE = treel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.treel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +320,7 @@
 				4C0555D81DEFF36C00C0459D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
