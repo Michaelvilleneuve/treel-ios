@@ -8,16 +8,12 @@
 
 import UIKit
 
-class AccountViewController: GenericViewController {
+class AccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL (string: "https://app.treel.io/account/?mobile_app=true");
-        let requestObj = URLRequest(url: url!);
-        webview.loadRequest(requestObj);
-        self.webview.scalesPageToFit = true
-        self.webview.isHidden = true
-        // Do any additional setup after loading the view, typically from a nib.
+        
+       
     }
     
 }
