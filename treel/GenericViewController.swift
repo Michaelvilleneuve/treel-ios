@@ -27,13 +27,35 @@ class GenericViewController: UIViewController, UIWebViewDelegate {
     func refreshWebView() {
         loader.startAnimating()
         webview.reload();
-        
     }
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         loader.stopAnimating()
         refreshControl.endRefreshing()
         self.webview.isHidden = false
+    }
+    
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if request.url?.absoluteString.range(of: "https://app.treel.io/share") != nil {
+            share(request: (request.url?.absoluteString)!)
+            return false
+        } else {
+            print("whowho")
+            return true
+        }
+    }
+    
+    func share(request: String) {
+        var urlToShare = request.components(separatedBy: "#")
+        print(request)
+        if urlToShare.indices.contains(1) {
+            let shareText = "Hé, regarde ça sur Treel :  \(urlToShare[1])"
+            
+            let activityViewController : UIActivityViewController = UIActivityViewController(
+                activityItems: [shareText], applicationActivities: nil)
+            
+            self.present(activityViewController, animated: true, completion: nil)
+        }
     }
     
     func hideRefresh() {

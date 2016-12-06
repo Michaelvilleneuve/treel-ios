@@ -8,21 +8,15 @@
 
 import UIKit
 
-class EditAccountViewController: GenericViewController {
+class AccountIdeasViewController: GenericViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL (string: "https://app.treel.io/account/?mobile_app=true");
+        let url = URL (string: "https://app.treel.io/ideas/?mobile_app=true");
         let requestObj = URLRequest(url: url!);
         webview.loadRequest(requestObj);
         self.webview.scalesPageToFit = true
         self.webview.isHidden = true
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Enregistrer", style: .plain, target: self, action: #selector(saveInfos))
-    }
-    
-    func saveInfos() {
-        webview.stringByEvaluatingJavaScript(from: "$('form').submit()")
     }
     
 }

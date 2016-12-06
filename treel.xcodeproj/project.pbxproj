@@ -13,6 +13,8 @@
 		4C0555CF1DEFF36C00C0459D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0555CE1DEFF36C00C0459D /* Assets.xcassets */; };
 		4C0555D21DEFF36C00C0459D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0555D01DEFF36C00C0459D /* LaunchScreen.storyboard */; };
 		4C0C672B1DF5964B00E70694 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C672A1DF5964B00E70694 /* LoginViewController.swift */; };
+		4C11073E1DF692B700BFE2AF /* AccountIdeasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11073D1DF692B700BFE2AF /* AccountIdeasViewController.swift */; };
+		4C1107401DF6953100BFE2AF /* AccountChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11073F1DF6953100BFE2AF /* AccountChatsViewController.swift */; };
 		4C28EC311DF187DD0095E961 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28EC301DF187DD0095E961 /* AccountViewController.swift */; };
 		4C28EC351DF1A2480095E961 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28EC341DF1A2480095E961 /* CustomTabBarViewController.swift */; };
 		4C31DB571DF1B4F80065C219 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C31DB561DF1B4F80065C219 /* GenericViewController.swift */; };
@@ -30,6 +32,8 @@
 		4C0555D11DEFF36C00C0459D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0555D31DEFF36C00C0459D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0C672A1DF5964B00E70694 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4C11073D1DF692B700BFE2AF /* AccountIdeasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountIdeasViewController.swift; sourceTree = "<group>"; };
+		4C11073F1DF6953100BFE2AF /* AccountChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountChatsViewController.swift; sourceTree = "<group>"; };
 		4C28EC301DF187DD0095E961 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		4C28EC341DF1A2480095E961 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		4C31DB561DF1B4F80065C219 /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				4CD52D191DF2D58C00F18959 /* NewIdeaViewController.swift */,
 				4CB6FBE11DF58DB400A75C8B /* AccountTableController.swift */,
 				4C0C672A1DF5964B00E70694 /* LoginViewController.swift */,
+				4C11073D1DF692B700BFE2AF /* AccountIdeasViewController.swift */,
+				4C11073F1DF6953100BFE2AF /* AccountChatsViewController.swift */,
 			);
 			path = treel;
 			sourceTree = "<group>";
@@ -158,11 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C11073E1DF692B700BFE2AF /* AccountIdeasViewController.swift in Sources */,
 				4C0C672B1DF5964B00E70694 /* LoginViewController.swift in Sources */,
 				4CB6FBE21DF58DB400A75C8B /* AccountTableController.swift in Sources */,
 				4C0555CA1DEFF36C00C0459D /* ViewController.swift in Sources */,
 				4C31DB571DF1B4F80065C219 /* GenericViewController.swift in Sources */,
 				4C28EC351DF1A2480095E961 /* CustomTabBarViewController.swift in Sources */,
+				4C1107401DF6953100BFE2AF /* AccountChatsViewController.swift in Sources */,
 				4C39D4CC1DF422B00030A9BD /* EditAccountViewController.swift in Sources */,
 				4C0555C81DEFF36C00C0459D /* AppDelegate.swift in Sources */,
 				4C28EC311DF187DD0095E961 /* AccountViewController.swift in Sources */,
