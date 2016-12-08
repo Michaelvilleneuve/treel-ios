@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,16 +17,16 @@ class LoginViewController: UIViewController {
         webview.loadRequest(requestObj);
         self.webview.scalesPageToFit = true
         self.webview.isHidden = false
-        
-       var timer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.checkConnection), userInfo: nil, repeats: true)
     }
     
-    func checkConnection() {
-        var currentURL : NSString = (webview.request?.url?.absoluteString)! as NSString
-        if String(currentURL).range(of: "/account") != nil {
-            let vc : AnyObject! = self.storyboard?.instantiateViewController(withIdentifier: "main_view")
-            self.show(vc as! UIViewController, sender: vc)
+    
+    
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if request.url?.absoluteString.range(of: "/account") != nil {
+            self.dismiss(animated: true)
+            return false
         }
+        return true
     }
     
     @IBOutlet weak var webview: UIWebView!
