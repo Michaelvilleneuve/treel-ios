@@ -19,6 +19,9 @@
 		4C28EC351DF1A2480095E961 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28EC341DF1A2480095E961 /* CustomTabBarViewController.swift */; };
 		4C31DB571DF1B4F80065C219 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C31DB561DF1B4F80065C219 /* GenericViewController.swift */; };
 		4C39D4CC1DF422B00030A9BD /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C39D4CB1DF422B00030A9BD /* EditAccountViewController.swift */; };
+		4C44EE9B1DF9B032005DD629 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44EE9A1DF9B032005DD629 /* NotificationsViewController.swift */; };
+		4C44EE9D1DF9C58E005DD629 /* GlobalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44EE9C1DF9C58E005DD629 /* GlobalViewController.swift */; };
+		4C6A1B331DFAB3D300569163 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6A1B321DFAB3D300569163 /* Shared.swift */; };
 		4CB6FBE21DF58DB400A75C8B /* AccountTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6FBE11DF58DB400A75C8B /* AccountTableController.swift */; };
 		4CD52D1A1DF2D58C00F18959 /* NewIdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD52D191DF2D58C00F18959 /* NewIdeaViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,9 @@
 		4C28EC341DF1A2480095E961 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		4C31DB561DF1B4F80065C219 /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		4C39D4CB1DF422B00030A9BD /* EditAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
+		4C44EE9A1DF9B032005DD629 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		4C44EE9C1DF9C58E005DD629 /* GlobalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalViewController.swift; sourceTree = "<group>"; };
+		4C6A1B321DFAB3D300569163 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		4CB6FBE11DF58DB400A75C8B /* AccountTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableController.swift; sourceTree = "<group>"; };
 		4CD52D191DF2D58C00F18959 /* NewIdeaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewIdeaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +93,9 @@
 				4C0C672A1DF5964B00E70694 /* LoginViewController.swift */,
 				4C11073D1DF692B700BFE2AF /* AccountIdeasViewController.swift */,
 				4C11073F1DF6953100BFE2AF /* AccountChatsViewController.swift */,
+				4C44EE9A1DF9B032005DD629 /* NotificationsViewController.swift */,
+				4C44EE9C1DF9C58E005DD629 /* GlobalViewController.swift */,
+				4C6A1B321DFAB3D300569163 /* Shared.swift */,
 			);
 			path = treel;
 			sourceTree = "<group>";
@@ -164,14 +173,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6A1B331DFAB3D300569163 /* Shared.swift in Sources */,
 				4C11073E1DF692B700BFE2AF /* AccountIdeasViewController.swift in Sources */,
 				4C0C672B1DF5964B00E70694 /* LoginViewController.swift in Sources */,
 				4CB6FBE21DF58DB400A75C8B /* AccountTableController.swift in Sources */,
+				4C44EE9B1DF9B032005DD629 /* NotificationsViewController.swift in Sources */,
 				4C0555CA1DEFF36C00C0459D /* ViewController.swift in Sources */,
 				4C31DB571DF1B4F80065C219 /* GenericViewController.swift in Sources */,
 				4C28EC351DF1A2480095E961 /* CustomTabBarViewController.swift in Sources */,
 				4C1107401DF6953100BFE2AF /* AccountChatsViewController.swift in Sources */,
 				4C39D4CC1DF422B00030A9BD /* EditAccountViewController.swift in Sources */,
+				4C44EE9D1DF9C58E005DD629 /* GlobalViewController.swift in Sources */,
 				4C0555C81DEFF36C00C0459D /* AppDelegate.swift in Sources */,
 				4C28EC311DF187DD0095E961 /* AccountViewController.swift in Sources */,
 				4CD52D1A1DF2D58C00F18959 /* NewIdeaViewController.swift in Sources */,

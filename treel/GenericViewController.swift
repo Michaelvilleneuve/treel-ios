@@ -12,6 +12,7 @@ class GenericViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var loader: UIActivityIndicatorView!
     var refreshControl: UIRefreshControl!
+    @IBOutlet weak var webview: UIWebView!
     
     
     override func viewDidLoad() {
@@ -40,7 +41,6 @@ class GenericViewController: UIViewController, UIWebViewDelegate {
             share(request: (request.url?.absoluteString)!)
             return false
         } else {
-            print("whowho")
             return true
         }
     }
@@ -62,10 +62,6 @@ class GenericViewController: UIViewController, UIWebViewDelegate {
         let viewWithTag = self.view.viewWithTag(100)
         viewWithTag?.removeFromSuperview()
     }
-    
-    
-    
-    @IBOutlet weak var webview: UIWebView!
     
 }
 
