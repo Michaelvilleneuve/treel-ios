@@ -23,8 +23,10 @@ class NotificationsViewController: UIViewController, UIWebViewDelegate {
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         if request.url?.absoluteString.range(of: "/notifications") == nil {
             Shared.shared.stringValue = request.url?.absoluteString
+            var controller = "global"
+            
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "global")
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: controller)
             self.present(nextViewController, animated:true, completion:nil)
             return false
         } else {

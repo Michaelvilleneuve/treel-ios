@@ -17,7 +17,7 @@ class GlobalViewController: GenericViewController {
         webview.loadRequest(requestObj);
         self.webview.scalesPageToFit = true
         self.webview.isHidden = true
-        
+        self.webview.scrollView.bounces = false
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Fermer", style: .plain, target: self, action: #selector(close))
     }
     
